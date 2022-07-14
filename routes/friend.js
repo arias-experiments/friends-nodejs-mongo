@@ -27,7 +27,7 @@ router.post('/', (request, response) => {
             age: friendJSON.age,
             good: friendJSON.good || true
         })
-        car.save( (error) => {
+        friend.save( (error) => {
             if (error){
                 response.send({'error': error})
             }else{
